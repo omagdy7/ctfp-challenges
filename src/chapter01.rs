@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 fn comp<F, G, T, R1, R2>(f: F, g: G) -> impl Fn(T) -> R2
 where
     F: Fn(T) -> R1,
@@ -12,8 +14,6 @@ fn identity<T>(x: T) -> T {
 
 #[cfg(test)]
 mod tests {
-    use std::convert::identity;
-
     use super::*;
 
     #[test]
