@@ -1,0 +1,10 @@
+[package]
+name = "ctfp-challenges"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "chapter01" 
+path = "src/chapter01.rs"
